@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+
+    <style>
+        input, textarea, select{
+            border: solid red 1px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your First Name"><br><br>
+
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Last Name"><br>
+
+
+        <br><input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Male</label>
+
+
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Female</label><br><br>
+
+        <label for="lname">Age:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Age"><br><br>
+
+
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="lname">Email:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Email"><br><br>
+
+        <label for="lname">Password:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Password"><br><br>
+
+        <label for="lname">Password:</label>
+        <input type="text" id="lname" name="lname" placeholder="Confirm your Password"><br><br>
+
+
+        <label for="lname">Phone Number:</label>
+        <select id="countryCode" name="countryCode">
+            <option value="+1">+1</option>
+            <option value="+44">+44</option>
+            <option value="+91">+91</option>
+          </select>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Phone Number"><br><br>
+
+
+        <label for="lname">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter Your Address" style="width: 300px; height: 200px; vertical-align: top;"></textarea><br><br>
+
+
+        <label for="lname">State:</label>
+        <select id="countryCode" name="countryCode">
+            <option value="+1">New York</option>
+            <option value="+44">Kanas</option>
+            <option value="+91">Washington</option>
+          </select>
+          <br><br>
+
+
+          <label for="lname">Pin Code:</label>
+          <input type="text" id="lname" name="lname" placeholder="Put in Your Pin Code"><br><br>
+
+
+          <label for="lname">Hobbies:</label>
+          <input type="checkbox" id="option1" name="options[]" value="Option 1">
+          <label for="option1">Music</label>
+          
+          <input type="checkbox" id="option2" name="options[]" value="Option 2">
+          <label for="option2">Movies</label>
+          
+          <input type="checkbox" id="option3" name="options[]" value="Option 3">
+          <label for="option3">Sports</label>
+
+          <input type="checkbox" id="option4" name="options[]" value="Option 4">
+          <label for="option3">Travel</label><br><br>
+
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Select a file:</label>
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf"><br><br>
+
+            I Decalre this is all correct
+            <input type="checkbox" id="option1" name="options[]" value="Option 1"><br><br>
+
+            <button type="submit">Register</button> <button type="submit">Reset</button>
+           
+
+
+          </form>
+          
+
+      </form>
+    
+</body>
+</html>
